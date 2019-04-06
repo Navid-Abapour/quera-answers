@@ -1,0 +1,37 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+	char w[4][14];
+	char e[4];int cR=0, cL=0, l, b, r, c;
+	for(int i=0; i<4; i++) cin>>w[i]>>e[i];
+		for(int i=0; i<4; i++){
+			if(e[i]=='L')
+			{
+				l=b;
+				cL++; b=i;
+			}
+			else if (e[i]=='R')
+			{
+				r=c;
+				cR++; c=i;
+			}
+			if(cR==2 && cL==1)
+			{
+				cout<<w[r]; break;
+			}
+			else if(cL==2 && cR==1)
+			{
+				cout<<w[l]; break;
+			}
+			if(cR==3)
+			{
+				cout<<w[r]; break;
+			}
+			else if(cL==3)
+			{
+				cout<<w[l]; break;
+			}
+		}
+		cout<<endl;
+}

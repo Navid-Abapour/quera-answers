@@ -1,0 +1,36 @@
+#include <iostream>
+#include <iomanip>
+using namespace std;
+int main ()
+{int n; float m; double BMI;
+	cin>>n>>m;
+	BMI=(n)/(m*m);
+	if (n<1 or n>200 or m<1 or m>10)
+		return 0;
+	if (BMI<18.5)
+		{
+		cout<<std::fixed;
+		cout.precision(2);
+		cout<<BMI<<endl<<"Underweight";
+		}
+	else if (BMI>=18.5 && BMI<25)
+	{
+		cout<<std::fixed;
+		cout.precision(2);
+		cout<<BMI<<endl<<"Normal";
+	}
+	else if (BMI>=25 && BMI<30)
+	{
+		cout<<std::fixed;
+		cout.precision(2);
+		cout<<BMI<<endl<<"Overweight";
+	}
+	else if (BMI>=30)
+	{
+		cout<<std::fixed;
+		cout.precision(2);
+		cout<<BMI<<endl<<"Obese";
+	}	
+		
+		
+		}

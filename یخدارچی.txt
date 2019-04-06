@@ -1,0 +1,15 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	int king, minister, galee, elephant, horse, soldier;
+	cin>>king>>minister>>galee>>elephant>>horse>>soldier;
+		king=(king-1)*(-1);
+		minister=(minister-1)*(-1);
+		galee=(galee-2)*(-1);
+		elephant=(elephant-2)*(-1);
+		horse=(horse-2)*(-1);
+		soldier=(soldier-8)*(-1);
+		cout<<king<<" "<<minister<<" "<<galee<<" "<<elephant<<" "<<horse<<" "<<soldier;
+	return 0;
+}

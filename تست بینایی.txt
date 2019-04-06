@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+	string s1,s2;
+	int n,i,counter=0;
+	cin>>n;
+	cin>>s1;
+	cin>>s2;
+	for(i=0;i<s1.size();i++)
+	{
+		if(s1.at(i)!=s2.at(i)) counter++;
+	}
+	cout<<counter;
+}
+

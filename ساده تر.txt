@@ -1,0 +1,53 @@
+#include <iostream>
+#include <iomanip>
+using namespace std;
+int main()
+{
+	int a, b, c, d;
+	double sum, avg, by, max, min;
+	cin>>a;
+	cin>>b;
+	cin>>c;
+	cin>>d;
+	
+	sum=a+b+c+d;
+	avg=sum/4;
+	by=a*b*c*d;
+	
+	if(a>=b && a>=c && a>=d) max=a;
+	if(b>=a && b>=c && b>=d) max=b;
+	if(c>=a && c>=b && c>=d) max=c;
+	if(d>=a && d>=b && d>=c) max=d;
+	
+	if(a<=b && a<=c && a<=d) min=a;
+	if(b<=a && b<=c && b<=d) min=b;
+	if(c<=a && c<=b && c<=d) min=c;
+	if(d<=a && d<=b && d<=c) min=d;
+	
+	cout<<std::fixed;
+	cout.precision(6);
+	cout<< "Sum : ";
+	cout<<sum<<endl;
+	
+	cout<<std::fixed;
+	cout.precision(6);
+	cout<< "Average : ";
+	cout<<avg<<endl;
+	
+	cout<<std::fixed;
+	cout.precision(6);
+	cout<< "Product : ";
+	cout<<by<<endl;
+	
+	cout<<std::fixed;
+	cout.precision(6);
+	cout<< "MAX : ";
+	cout<<max<<endl;
+	
+	cout<<std::fixed;
+	cout.precision(6);
+	cout<< "MIN : ";
+	cout<<min<<endl;
+	
+	
+}

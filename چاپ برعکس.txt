@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+	int a[1000],i,j=1,k,n,c;
+	
+	for(i=0; j!=0; i++)
+	{
+	cin>>n;
+	a[i]=n;
+	
+	if(n==0)
+	{j=0; c=i;}
+	}
+
+	for(--c;c>=0;c--)
+	{
+		cout<<a[c]<<endl;
+	}
+
+}
+

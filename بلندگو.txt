@@ -1,0 +1,15 @@
+#include <iostream>
+#include <string>
+using namespace std;
+int main()
+{
+	int a,i,j;
+	string str;
+  	cin>>str;
+  	a=str.size();
+  	for(i=0; i<a; i++)
+	  	{
+    	for(j=0; j<=i; j++) {str[j] = str[i];}
+      	cout<<str<<endl;
+    	}	
+}
