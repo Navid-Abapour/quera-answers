@@ -1,0 +1,12 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+ int i=2,j,k=0,n=2;
+ cin>>j;
+ int x[j+2];
+ x[0]=0; x[1]=1;
+ while(i<j+2){ x[i]=x[i-1]+x[i-2];i++; }while(i<j+2);
+ i = 1;
+ do{ while(k<j+2){ if(i==x[k]){ cout<< "+"; break; } k++; }; if(i!=x[k]) cout << "-"; i++; k=0; }while(i<=j);
+}

@@ -1,0 +1,16 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	int q,w;
+	cin>>q>>w;
+	q=11-q;
+	if (w<11)
+	cout<<"Right "<<q<<" "<<w;
+	else
+	{
+		w=21-w;
+		cout<<"Left "<<q<<" "<<w;
+	}
+	return 0;
+}

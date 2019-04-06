@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+	int n,i;
+	char ch1;
+	bool bo1=false;
+	cin>>n;
+	string arr[n];
+	for(i=0;i<n;i++) cin>>arr[i];
+	for(i=0;i<n;i++)
+	{
+		if(arr[i]=="CAPS") 
+		{
+			if(bo1==false)			bo1=true;
+			else if(bo1==true)		bo1=false;
+		}
+		if(arr[i]!="1" && arr[i]!="2" && arr[i]!="3" && arr[i]!="4" && arr[i]!="5" && arr[i]!="6" && arr[i]!="7" && arr[i]!="8" && arr[i]!="9" && arr[i]!="0" && arr[i]!="CAPS")
+		{
+			if(bo1==true)
+			{		ch1=arr[i].at(0)-32;	cout<<ch1;		}	
+			else if(bo1==false)	cout<<arr[i];
+		}
+	}
+}

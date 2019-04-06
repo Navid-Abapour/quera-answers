@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+	int a, b, f, m, z, t = 0;
+	cin>>a>>b;
+	if (a<1 or b<1 or a>10000 or b>10000)
+	return 0;
+	
+	for(int i=a;i<=b;i++)
+	{m=0;
+	for(z=1; m!=3 && z<=i; z++)
+	{if (i%z == 0)
+		m++;}
+		if (m == 2)
+		{cout << i << endl; t = 1;}
+	}
+		
+}

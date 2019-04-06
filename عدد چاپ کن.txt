@@ -1,0 +1,18 @@
+#include <iostream>
+#include <string>
+using namespace std;
+int main()
+{
+ int number,a,b,i,j=0,digit;
+ string str;
+ cin>>str;
+ digit=str.size();
+ 
+ for(i=0; i<digit; i++)
+ {
+  cout<<str[i]<<": ";
+  for(j=0; j<str[i]-48; j++){cout<<str[i];}
+  cout<<endl;
+ }
+ 
+}

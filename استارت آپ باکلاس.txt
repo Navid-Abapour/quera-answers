@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+		int Error;
+		switch(Error)
+	{
+		case'electronical1': cout<<"%10";
+		case'electronical2': cout<<"%10";
+		case'electronical3': cout<<"%10";
+		case'electronical4': cout<<"%10";
+	}
+	int t,i,j;
+	int x[4];
+	int m[4]={0,0,0,0};
+	cin>>x[0]>>x[1]>>x[2]>>x[3];
+	i=0; j=0;
+	do {if (x[0] !=0 && x[1] !=0 && x[2] !=0 && x[3] !=0) {x[i]-=1; m[i]++; t=x[0]; j=0; while(j<3){x[j]=x[j+1]; j++;}; x[3]=t;} else {break;} 
+	if (i==3) i=-1; i++;}while(i<4);
+	i=0;
+	do {cout<<m[i]<<" "; i++;}while(i<4);
+	return 0;
+}

@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+	
+	int q=0,w=0,max_mark,tedad_k=0,tedad_n=0,tedad_sh=0,h_mark=0;
+	char k[]="331122", n[]="123", sh[]="2123"; 
+ 	cin>>max_mark;
+ 	char arr[max_mark];
+ 	cin>>arr;
+ 	
+	do {if(k[w]==arr[q]) {tedad_k++;}  if(w==5) w=-1; q++;w++;}while(q<max_mark); q=0; w=0;
+	do {if(sh[w]==arr[q]){tedad_sh++;} if(w==3) w=-1; q++;w++;}while(q<max_mark); q=0; w=0;
+	do {if(n[w]==arr[q]) {tedad_n++;}  if(w==2) w=-1; q++;w++;}while(q<max_mark); q=0; w=0;
+	
+	
+    if(tedad_k>=tedad_n && tedad_k>=tedad_sh) {h_mark=tedad_k;}
+    else if(tedad_n>=tedad_k && tedad_n>=tedad_sh) {h_mark=tedad_n;}
+    else {h_mark=tedad_sh;}
+    
+    int tedad_esm[3]={tedad_k, tedad_n, tedad_sh};
+	cout<<h_mark<<endl;
+	
+    do{if(tedad_esm[q]==h_mark){if (q==0){cout<<"keyvoon"<<endl;} else if (q==1){cout<<"nezam"<<endl;}  else if(q==2){cout<<"shir farhad"<<endl;}}q++;}while(q<3);
+
+}
+

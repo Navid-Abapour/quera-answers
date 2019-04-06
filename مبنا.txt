@@ -1,0 +1,30 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	int a,b,i=0,c=0,r[1000];
+	cin>>a>>b;
+	while(a>=b)
+	{
+		r[i]=a%b;
+		a/=b;
+		i++;
+	}
+	
+	r[i]=a;
+	i++;
+	int sum1=0,sum2=0;
+	for(int k=1;k<=i;k++)
+	{
+		if(k%2!=0)
+		sum1+=r[k-1];
+		else
+		sum2+=r[k-1];
+	}
+	if(sum1==sum2)
+	cout<<"Yes"<<endl;
+	else
+	cout<<"No"<<endl;
+	system("pause>0");	
+	
+}

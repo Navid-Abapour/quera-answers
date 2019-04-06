@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+int c=0,Y=0,R=0,G=0;
+char ch;
+while(cin.get(ch))
+    {
+        if(ch=='Y')			Y++;
+        else if(ch=='R')	R++;
+        else if(ch=='G')	G++;
+		c++;
+		if (c==5)			break;
+    }
+if( (R>=3) || (R==5) || (Y==5) || ((R>=2)&&(Y>=2)) || (G==0) )
+{
+    cout<<"nakhor lite";
+}
+else
+    cout<<"rahat baash";
+}

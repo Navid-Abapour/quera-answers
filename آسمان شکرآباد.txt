@@ -1,0 +1,14 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+	int i,j,k,m=0;
+	cin>>i>>j;
+	k=i*j;
+	char n[k];
+	i=0;
+	do {cin>>n[i]; i++;}while(i<k);
+	i=0;
+	do { {if(n[i]=='*') m++;} i++;}while(i<k);
+	cout<<m;
+}

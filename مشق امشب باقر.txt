@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+	int q,w,e,r;
+	cin>>q>>w>>e;
+	r=q+w+e;
+		if (q==0)
+			cout<<"No";
+		else if (w==0)
+			cout<<"No";
+		else if (e==0)
+			cout<<"No";
+		else if (r==180)
+			cout<<"Yes";
+		else
+			cout<<"No";
+	return 0;
+}

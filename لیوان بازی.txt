@@ -1,0 +1,12 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+	bool b1=false;
+	char a,b,c;
+	int n,q,w=0;
+	cin>>n>>a;
+	do{cin>>b>>c; if(b==a) a=c; else if(c==a) a=b; w++;}while(w<n);
+	cout<<a;
+}
+

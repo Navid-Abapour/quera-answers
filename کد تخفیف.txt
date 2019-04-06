@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+	bool bo1=false,bo2=false,bo3=false;
+	int i=0,j=0,p=0,number,counter,main_counter;
+	string str1;
+	cin>>number>>str1;
+	string arr[number];
+	int position[number];
+	do{position[j]=0; j++;}while(j<number);
+	j=0;
+	do{cin>>arr[j]; counter=0; main_counter=0;	i=0; p=0;	do{p=0; do{ if(arr[j][i]==str1[p]) {counter++; break;} p++;}while(p<str1.length()); i++;}while(i<arr[j].length());	i=0; p=0; do{p=0;do{ if(arr[j][p]==str1[i]) {main_counter++; break;} p++;}while(p<arr[j].length()); i++;}while(i<str1.length()); if(counter==arr[j].length() && main_counter==str1.length()) position[j]=1; j++;}while(j<number);
+	j=0;
+	do{if(position[j]==0) cout<<"No"<<endl; else cout<<"Yes"<<endl; j++;}while(j<number);
+
+}

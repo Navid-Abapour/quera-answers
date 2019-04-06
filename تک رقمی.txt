@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    long int n;
+    int o=0;
+    cin>>n;
+    while (n>9)
+    {
+        o=0;
+        while (n>0)
+        {
+            o+=n%10;
+            n=n/10;
+        }
+        n=o;
+    }
+    cout<<n;
+}

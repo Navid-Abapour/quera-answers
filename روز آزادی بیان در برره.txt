@@ -1,0 +1,13 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	int q,w;
+	cin>>q;
+	w=q%2;
+		if (w==0)
+			cout<<"Bala Barare";
+		else
+			cout<<"Payin Barare";
+	return 0;
+}

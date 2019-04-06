@@ -1,0 +1,40 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+  int i;
+  long int bb, sum=0;
+  int n;
+  cin>>n;
+  long int arr[n];
+  for(i=0;i<n;i++)
+  {
+      cin>>arr[i];
+  }
+   for(i=0;i<n;)
+  {
+      if( arr [i] >= 0 ){
+      sum += arr [i];
+
+      }
+      else{
+
+          bb = arr [i];
+
+          for(  ; bb < 0 && i < n-1 ;)
+
+          {
+
+              i++;
+              bb += arr [i];
+
+              }
+              if ( bb > 0 )
+               sum += bb;
+      }
+      i++;
+
+  }
+  cout << sum;
+}
+

@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+	int n,majmoo,i=1;
+	cin>>n;
+	majmoo=0;
+	while (i<n)
+	{	
+	if(n%i==0)
+	{majmoo=majmoo+i;}
+	i++;
+	}
+	if(majmoo==n)
+	{cout<<"YES";}
+	else
+	{cout<<"NO";}
+}
+
+

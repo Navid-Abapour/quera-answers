@@ -1,0 +1,60 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+  //part1:
+  int i,n1,n2,n3,counter=0;
+  int aw[7]={0,0,0,0,0,0,0};
+  
+  //part2:
+  cin>>n1;
+  string a1[n1];
+  for(i=0;i<n1;i++) cin>>a1[i];
+  cin>>n2;
+  string a2[n2];
+  for(i=0;i<n2;i++) cin>>a2[i];
+  cin>>n3;
+  string a3[n3];
+  for(i=0;i<n3;i++) cin>>a3[i];
+  
+  //part3:
+  for(i=0;i<n1;i++)
+  {
+    if(a1[i]=="shanbe")  aw[0]=1;  
+    if(a1[i]=="1shanbe") aw[1]=1;
+    if(a1[i]=="2shanbe") aw[2]=1;
+    if(a1[i]=="3shanbe") aw[3]=1;
+    if(a1[i]=="4shanbe") aw[4]=1;
+    if(a1[i]=="5shanbe") aw[5]=1;
+    if(a1[i]=="jome")    aw[6]=1;
+  } 
+  
+  
+  for(i=0;i<n2;i++)
+  {
+    if(a2[i]=="shanbe")  aw[0]=1;
+    if(a2[i]=="1shanbe") aw[1]=1;
+    if(a2[i]=="2shanbe") aw[2]=1;
+    if(a2[i]=="3shanbe") aw[3]=1;
+    if(a2[i]=="4shanbe") aw[4]=1;
+    if(a2[i]=="5shanbe") aw[5]=1;
+    if(a2[i]=="jome")    aw[6]=1;
+  }
+  
+  for(i=0;i<n3;i++)
+  {
+    if(a3[i]=="shanbe")  aw[0]=1;
+    if(a3[i]=="1shanbe") aw[1]=1;
+    if(a3[i]=="2shanbe") aw[2]=1;
+    if(a3[i]=="3shanbe") aw[3]=1;
+    if(a3[i]=="4shanbe") aw[4]=1;
+    if(a3[i]=="5shanbe") aw[5]=1;
+    if(a3[i]=="jome")    aw[6]=1;
+  }
+  
+  
+  
+  //part4:
+  for(i=0;i<7;i++) if(aw[i]==0) counter++;
+  cout<<counter;
+}

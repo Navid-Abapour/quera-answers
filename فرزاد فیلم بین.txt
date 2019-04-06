@@ -1,0 +1,14 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+	int n,i=0,j=0,l;
+	cin>>n;
+	char arr[n][100];
+	cin.ignore();
+	do{cin.getline(arr[i],100);i++;}while(i<n);
+	i=0;
+	do{do{if(arr[i][j]=='\0'){l=i;break;}j++;}while(j<100);if(arr[i][0]>='a' && arr[i][0]<='z')arr[i][0]-=32;j=1;do{if(arr[i][j-1]==' '&&(arr[i][j]>='a' && arr[i][j]<='z'))arr[i][j]-=32;if(arr[i][j-1]!=' '&&(arr[i][j]>='A' && arr[i][j]<='Z'))arr[i][j]+=32;j++;}while(j<100);i++;}while(i<n);
+	i=0;
+	do{cout<<arr[i]<<endl;i++;}while(i<n);
+}

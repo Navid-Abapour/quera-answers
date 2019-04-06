@@ -1,0 +1,13 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+	int x,y,dx,dy,r;
+	cin>>x>>y;
+	cin>>r;
+	cin>>dx>>dy;
+	if(dx>=x && dx<=x+r && dy>=y-r && dy<=y)
+	cout<<"Mahdi";
+	else
+	cout<<"Parsa";
+}

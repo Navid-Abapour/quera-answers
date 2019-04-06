@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+int main ()
+{
+		int n,k,i=0,j=0;
+		int a[n];
+		cin>>n>>k;
+		
+		do{cin>>a[i]; j+=a[i]; i++;} while(i<=n);
+		
+		if(j%k==0)
+		{j=j/k; j=n-j; cout<<j;}
+		
+		else
+		{j=j/k; j=n-(j+1); cout<<j;}
+}
+
+	

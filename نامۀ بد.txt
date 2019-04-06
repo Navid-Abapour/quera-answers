@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+  int i,j,c;
+  string s;
+  cin>>s;
+  char ch;
+  for( i=0;i<s.size();i++)
+  { c=0;
+    ch=s[i];
+    for(j=0;j<s.size();j++)
+    {
+      if(ch==s[j]) c++;
+      }
+    if(c%2!=0){
+     cout<<"bad";
+     return 0;
+  }
+}
+  cout<<"khoob";
+}

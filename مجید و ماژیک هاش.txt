@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    int arr[100],n,i=0,j,number,min;
+    cin>>n;
+    do{arr[i]=0; i++;}while(i<100);
+    i=0;
+	do{cin>>number; arr[number]++; i++;}while(i<n);
+  	min=99;
+  	i=0;
+	do{if(arr[i]<min && arr[i]!=0){min=arr[i];j=i;} i++;}while(i<100);
+  	cout<<j;
+}
+

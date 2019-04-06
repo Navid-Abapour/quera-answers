@@ -1,0 +1,15 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+		int q, w, e;
+		cin >> q >> w >> e;
+			if(q*q == w*w + e*e)
+				cout<<"YES";
+			else if(w*w == q*q + e*e)
+				cout<<"YES";
+			else if(e*e == q*q + w*w)
+				cout<<"YES";
+			else
+				cout<<"NO";
+}
